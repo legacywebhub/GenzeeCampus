@@ -1,0 +1,1 @@
+'profile_image' => 'sometimes|required|image|mimes:jpeg,png,jpg|max:2048
