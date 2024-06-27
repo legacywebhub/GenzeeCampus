@@ -11,8 +11,9 @@ class TaskApplication extends Model
 {
     use HasFactory;
 
-    // Table connection
+    // Table connection & settings
     protected $table = 'task_applications';
+    public $timestamps = false;
 
     /**
      * The attributes that are mass assignable.

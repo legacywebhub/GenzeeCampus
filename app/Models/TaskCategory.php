@@ -9,8 +9,9 @@ class TaskCategory extends Model
 {
     use HasFactory;
 
-    // Table connection
+    // Table connection & settings
     protected $table = 'task_categories';
+    public $timestamps = false;
 
     /**
      * The attributes that are mass assignable.

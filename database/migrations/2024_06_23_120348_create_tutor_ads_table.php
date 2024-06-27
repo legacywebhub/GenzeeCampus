@@ -17,10 +17,10 @@ return new class extends Migration
             $table->foreignId('campus_id')->onDelete('set_null'); // Foreign Key referencing Campus
             $table->string('headline');
             $table->text('description')->nullable();
-            $table->string('subject_tags'); // Comma-separated list
+            $table->string('course_tags')->nullable(); // Comma-separated list
             $table->string('availability_schedule')->nullable();
-            $table->string('contact_info');
-            $table->decimal('price_per_hour', 8, 2)->nullable();
+            $table->string('contact_info')->nullable();
+            $table->decimal('price', 8, 2)->nullable();
             $table->enum('status', ['active', 'inactive', 'pending'])->default('pending');
             $table->timestamps(); // created_at and updated_at
         });

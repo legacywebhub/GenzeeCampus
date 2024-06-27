@@ -10,8 +10,9 @@ class Campus extends Model
 {
     use HasFactory;
 
-    // Table connection
+    // Table connection & settings
     protected $table = 'campuses';
+    public $timestamps = false;
 
     /**
      * The attributes that are mass assignable.
